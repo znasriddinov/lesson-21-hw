@@ -1,0 +1,86 @@
+.clients {
+  margin-top: 150px;
+
+  &-top {
+    text-align: center;
+    color: $color;
+
+    & h2 {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 57px;
+      letter-spacing: 0.20000000298023224px;
+    }
+
+    & p {
+      font-size: 16px;
+      width: 537px;
+      margin: 8px auto 0 auto;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.20000000298023224px;
+    }
+  }
+
+  &-bottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 327px);
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+
+    & .clients-box {
+      padding: 25px 27px;
+      border: 1px solid #dedede;
+      border-radius: 5px;
+
+      & p {
+        font-size: 16px;
+        margin-top: 16px;
+        color: #737373;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.20000000298023224px;
+      }
+
+      &-bottom {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 16px;
+
+        & h3 {
+          font-size: 16px;
+          color: #02897a;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0.20000000298023224px;
+        }
+
+        & h4 {
+          font-size: 14px;
+          color: #252b42;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0.20000000298023224px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 411px) {
+  .clients {
+    &-top {
+      & p {
+        width: 323px;
+        margin: 0 auto;
+      }
+    }
+
+    &-bottom {
+      grid-template-columns: 327px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.process {
+  margin-top: 203px;
+
+  &-top {
+    color: $color;
+    text-align: center;
+
+    & h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+    }
+
+    & p {
+      font-size: 16px;
+      width: 542px;
+      margin: 16px auto 0 auto;
+      font-weight: 500;
+      line-height: 26px;
+    }
+  }
+
+  &-bottom {
+    display: grid;
+    grid-template-columns: 388px 395px;
+    justify-content: center;
+    align-items: center;
+    gap: 178px;
+    margin-top: 32px;
+
+    &-left {
+      &-top {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+
+        & p {
+          box-shadow: 0px 2px 8px 0px rgba(86, 117, 146, 0.1);
+          -webkit-box-shadow: 0px 2px 8px 0px rgba(86, 117, 146, 0.1);
+          -moz-box-shadow: 0px 2px 8px 0px rgba(86, 117, 146, 0.1);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #2f281e;
+        }
+      }
+
+      &-bottom {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        margin-top: 24px;
+
+        & p {
+          box-shadow: 0px 2px 8px 0px rgba(86, 117, 146, 0.1);
+          -webkit-box-shadow: 0px 2px 8px 0px rgba(86, 117, 146, 0.1);
+          -moz-box-shadow: 0px 2px 8px 0px rgba(86, 117, 146, 0.1);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #2f281e;
+        }
+      }
+    }
+  }
+
+  & .proc-bottom {
+    text-align: center;
+    margin-top: 48px;
+
+    & .main-btn {
+      @include main-btn;
+      padding: 15px 31px;
+    }
+
+    & .main-btn:hover {
+      @include main-btn-hover;
+      padding: 15px 31px;
+    }
+  }
+}
+
+@media (max-width: 411px) {
+  .process {
+    margin-top: 141px;
+    text-align: center;
+
+    &-top {
+      & p {
+        width: 338px;
+        margin-top: 8px;
+      }
+    }
+
+    &-bottom {
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+
+      &-left {
+        &-top {
+          & p {
+            width: 188px;
+            text-align: start;
+          }
+        }
+
+        &-bottom {
+          margin-top: 32px;
+        }
+      }
+    }
+
+    & .proc-bottom {
+      margin-top: 32px;
+    }
+  }
+}
